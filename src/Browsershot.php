@@ -289,9 +289,9 @@ class Browsershot
 
     public function setHtml(string $html): static
     {
-        if (str_contains(strtolower($html), 'file://')) {
-            throw HtmlIsNotAllowedToContainFile::make();
-        }
+        // if (str_contains(strtolower($html), 'file://')) {
+        //     throw HtmlIsNotAllowedToContainFile::make();
+        // }
 
         $this->html = $html;
         $this->url = '';
